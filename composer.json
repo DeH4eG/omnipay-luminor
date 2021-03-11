@@ -1,6 +1,7 @@
 {
   "name": "deh4eg/omnipay-luminor",
   "description": "Luminor gateway for omnipay library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Denis Smolakov",
@@ -15,5 +16,9 @@
   "require": {
     "php": "^7.2",
     "league/omnipay": "^3"
+  },
+  "require-dev": {
+    "phpro/grumphp": "^1.3",
+    "omnipay/tests": "^3"
   }
 }
