@@ -40,8 +40,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
     /**
      * @return bool
      * @throws JsonException
-     * @throws JsonException
-     * @throws JsonException
      */
     public function isRedirect(): bool
     {
@@ -68,8 +66,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
     /**
      * @return bool
      * @throws JsonException
-     * @throws JsonException
-     * @throws JsonException
      */
     private function isStatusCreated(): bool
     {
@@ -78,8 +74,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
 
     /**
      * @return string|null
-     * @throws JsonException
-     * @throws JsonException
      * @throws JsonException
      */
     public function getRedirectUrl(): ?string
@@ -90,8 +84,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
     /**
      * @return string|null
      * @throws JsonException
-     * @throws JsonException
-     * @throws JsonException
      */
     public function getTransactionReference(): ?string
     {
@@ -100,8 +92,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
 
     /**
      * @return array
-     * @throws JsonException
-     * @throws JsonException
      * @throws JsonException
      */
     public function getRedirectData(): array
