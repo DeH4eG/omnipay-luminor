@@ -9,7 +9,7 @@ use Omnipay\Luminor\Message\AbstractResponse;
  * Class RetrieveObjectResponse
  * @package Omnipay\Luminor\Message\Response
  */
-class RetrieveObjectResponse extends AbstractResponse
+class FetchTransactionResponse extends AbstractResponse
 {
     /**
      * @var string

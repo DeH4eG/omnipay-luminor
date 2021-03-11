@@ -7,7 +7,7 @@ use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\Common\Message\NotificationInterface;
 use Omnipay\Common\Message\RequestInterface;
 use Omnipay\Luminor\Message\Request\PurchaseRequest;
-use Omnipay\Luminor\Message\Request\RetrieveObjectRequest;
+use Omnipay\Luminor\Message\Request\FetchTransactionRequest;
 use Omnipay\Luminor\Traits\ApiCredentialsTrait;
 
 
@@ -79,6 +79,6 @@ class Gateway extends AbstractGateway
      */
     public function fetchTransaction(array $options = []): AbstractRequest
     {
-        return $this->createRequest(RetrieveObjectRequest::class, $options);
+        return $this->createRequest(FetchTransactionRequest::class, $options);
     }
 }
