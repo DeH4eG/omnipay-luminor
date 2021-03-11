@@ -1,0 +1,19 @@
+{
+  "name": "deh4eg/omnipay-luminor",
+  "description": "Luminor gateway for omnipay library",
+  "authors": [
+    {
+      "name": "Denis Smolakov",
+      "email": "denissmolakovs@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\Luminor\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.2",
+    "league/omnipay": "^3"
+  }
+}
