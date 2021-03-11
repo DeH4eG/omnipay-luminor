@@ -10,7 +10,6 @@ use Omnipay\Luminor\Message\Request\PurchaseRequest;
 use Omnipay\Luminor\Message\Request\FetchTransactionRequest;
 use Omnipay\Luminor\Traits\ApiCredentialsTrait;
 
-
 /**
  * @method NotificationInterface acceptNotification(array $options = [])
  * @method RequestInterface authorize(array $options = [])
