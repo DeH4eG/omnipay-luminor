@@ -58,7 +58,7 @@ class Gateway extends AbstractGateway
     /**
      * @return string
      */
-    public function getGatewayClass(): string
+    public static function getGatewayClass(): string
     {
         return self::GATEWAY_CLASS;
     }
