@@ -2,6 +2,8 @@
 
 Omnipay Luminor Gateway is a payment processing library for PHP. It's based on [Omnipay package](https://github.com/thephpleague/omnipay)
 
+[![Latest Stable Version](https://poser.pugx.org/deh4eg/omnipay-luminor/v)](//packagist.org/packages/deh4eg/omnipay-luminor) [![Total Downloads](https://poser.pugx.org/deh4eg/omnipay-luminor/downloads)](//packagist.org/packages/deh4eg/omnipay-luminor) [![Latest Unstable Version](https://poser.pugx.org/deh4eg/omnipay-luminor/v/unstable)](//packagist.org/packages/deh4eg/omnipay-luminor) [![License](https://poser.pugx.org/deh4eg/omnipay-luminor/license)](//packagist.org/packages/deh4eg/omnipay-luminor)
+
 ## Installation
 
 Omnipay is installed via [Composer](https://getcomposer.org/). To install, simply require `league/omnipay` and `deh4eg/omnipay-luminor` with Composer:
