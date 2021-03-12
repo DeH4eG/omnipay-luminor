@@ -42,8 +42,8 @@ class Gateway extends AbstractGateway
     public function getDefaultParameters(): array
     {
         return [
-            ApiCredentialsTrait::$brandIdParameterKey => '',
-            ApiCredentialsTrait::$secretKeyParameterKey => ''
+            ApiCredentialsTrait::getBrandIdParameterKey() => '',
+            ApiCredentialsTrait::getSecretKeyParameterKey() => ''
         ];
     }
 
