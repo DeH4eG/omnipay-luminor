@@ -11,12 +11,28 @@ trait ApiCredentialsTrait
     /**
      * @var string
      */
-    public static $brandIdParameterKey = 'brand_id';
+    private static $brandIdParameterKey = 'brand_id';
 
     /**
      * @var string
      */
-    public static $secretKeyParameterKey = 'secretKey';
+    private static $secretKeyParameterKey = 'secretKey';
+
+    /**
+     * @return string
+     */
+    public static function getBrandIdParameterKey(): string
+    {
+        return self::$brandIdParameterKey;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getSecretKeyParameterKey(): string
+    {
+        return self::$secretKeyParameterKey;
+    }
 
     /**
      * @param string $brandId
