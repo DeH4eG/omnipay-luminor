@@ -1,5 +1,7 @@
 <?php
 
+namespace Omnipay\Luminor\Test;
+
 use Omnipay\Luminor\Gateway;
 use Omnipay\Luminor\Message\Response\FetchTransactionResponse;
 use Omnipay\Luminor\Message\Response\PurchaseResponse;

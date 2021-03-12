@@ -17,7 +17,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Omnipay\\Luminor\\": "src/"
+      "Omnipay\\Luminor\\": "src/",
+      "Omnipay\\Luminor\\Test\\": "tests/"
     }
   },
   "require": {
@@ -33,7 +34,7 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "scripts" : {
+  "scripts": {
     "test": "./vendor/bin/grumphp run"
   }
 }
