@@ -2,9 +2,12 @@
 
 namespace Omnipay\Luminor\Message;
 
+use Omnipay\Common\Exception\RuntimeException;
+use Omnipay\Common\Helper;
 use Omnipay\Common\Message\AbstractRequest as OmnipayAbstractRequest;
 use Omnipay\Common\Message\ResponseInterface;
 use Omnipay\Luminor\Traits\ApiCredentialsTrait;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * Class AbstractRequest
@@ -32,6 +35,14 @@ abstract class AbstractRequest extends OmnipayAbstractRequest
         return [
             self::$brandIdParameterKey => $this->getBrandId()
         ];
+    }
+
+    /**
+     * @return string
+     */
+    public function getHttpMethod(): string
+    {
+        return $this->httpMethod;
     }
 
     /**
@@ -95,4 +106,23 @@ abstract class AbstractRequest extends OmnipayAbstractRequest
         array $headers,
         int $statusCode
     ): ResponseInterface;
+
+    /**
+     * @param array $parameters
+     * @return $this
+     */
+    public function initialize(array $parameters = []): AbstractRequest
+    {
+        if (null !== $this->response) {
+            throw new RuntimeException('Request cannot be modified after it has been sent!');
+        }
+
+        if ($this->parameters === null) {
+            $this->parameters = new ParameterBag();
+        }
+
+        Helper::initialize($this, $parameters);
+
+        return $this;
+    }
 }
