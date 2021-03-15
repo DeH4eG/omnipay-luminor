@@ -17,7 +17,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "Omnipay\\Luminor\\": "src/"
+      "Omnipay\\Luminor\\": "src/",
+      "Omnipay\\Luminor\\Test\\": "tests/"
     }
   },
   "require": {
