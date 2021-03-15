@@ -34,7 +34,7 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "scripts": {
+  "scripts" : {
     "test": "./vendor/bin/grumphp run"
   }
 }
