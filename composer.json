@@ -32,9 +32,12 @@
     "squizlabs/php_codesniffer": "^3.5",
     "phpstan/phpstan": "^0.12.81"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts" : {
+  "scripts": {
     "test": "./vendor/bin/grumphp run"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "2.x-dev"
+    }
   }
 }
